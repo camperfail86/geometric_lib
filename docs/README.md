@@ -19,3 +19,22 @@
 - Square: `P = 4a`
 - Triangle: `P = a + b + c`
 
+In the file circle.py there are 2 functions: The first area - it takes the radius of the circle and returns its area. The second perimeter - it takes the radius of the circle and returns its perimeter.
+Example of a call: radius = 1, pass it as an argument to the function, the result is area(1) => 3.14
+
+In the file square.py There are 2 functions: The first area - it takes the sides of the shape and returns its area. The second perimeter - it takes the sides of the shape and returns its perimeter.
+Example of a call: there is a side a = 3, we pass it as an argument to the function, the result is a perimeter(3) => 12
+
+In the file  triangle.py There are 2 functions: The first area - it takes the sides of the shape and return its area. The second perimeter - it takes the sides of the shape and return its perimeter.
+Example of a call: there is a side a = 3, b=4, c=5, we pass it as an argument to the function, the result is a perimeter(3,4,5) => 12
+
+Пример вызова функции calculate.py
+Enter figure name, avaliable are ['circle', 'square']: circle
+Enter function name, avaliable are ['perimeter', 'area']: area
+Input figure sizes separated by space, 1 for circle and square: 5
+result - 78.53981633974483
+
+69980067b0e308e7b968a9f303a09d668cc5a519 - add info calculate.py
+178d6f627d911fce2471969c1d28cacef4bd5fa1 - added info triangle.py
+d4615e286405326bb4756a6a48af5774cf15f79 - added info squaere.py
+addfd492b7438372abb280fc6c18eb7961b5586e - added info circle.py
