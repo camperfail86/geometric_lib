@@ -1,4 +1,4 @@
-name: joba_kochkin
+name: ci
 
 on:
   push:
