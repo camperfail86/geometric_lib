@@ -5,6 +5,7 @@ import sys
 sys.path.append("/Users/kirillkockin/Desktop/isrpo/second-isrpo/geometric_lib")
 from calculate import calc
 
+
 class TestCalcPerimeter(unittest.TestCase):
     def test_calc_circle_perimeter(self):
         # Arrange
@@ -32,7 +33,7 @@ class TestCalcPerimeter(unittest.TestCase):
     def test_calc_triangle_perimeter(self):
         fig = "triangle"
         func = "perimeter"
-        size = [10,12,15]
+        size = [10, 12, 15]
         expected_result = 37
 
         result = calc(fig, func, size)
@@ -45,7 +46,7 @@ class TestCalcArea(unittest.TestCase):
         fig = "circle"
         func = "area"
         size = [5]
-        expected_result = 25 * pi 
+        expected_result = 25 * pi
 
         result = calc(fig, func, size)
 
@@ -102,9 +103,7 @@ class TestCalcIntegerNegative(unittest.TestCase):
         with self.assertRaises(ValueError) as context:
             calc(fig, func, size)
 
-        self.assertEqual(
-            str(context.exception), expected_result
-        )
+        self.assertEqual(str(context.exception), expected_result)
 
     def test_calc_invalid_size_values_circle(self):
         fig = "circle"
@@ -115,9 +114,7 @@ class TestCalcIntegerNegative(unittest.TestCase):
         with self.assertRaises(ValueError) as context:
             calc(fig, func, size)
 
-        self.assertEqual(
-            str(context.exception), expected_result
-        )
+        self.assertEqual(str(context.exception), expected_result)
 
     def test_calc_invalid_size_values_square(self):
         fig = "square"
@@ -128,9 +125,7 @@ class TestCalcIntegerNegative(unittest.TestCase):
         with self.assertRaises(ValueError) as context:
             calc(fig, func, size)
 
-        self.assertEqual(
-            str(context.exception), expected_result
-        )
+        self.assertEqual(str(context.exception), expected_result)
 
 
 class TestCalcInvalidCountSize(unittest.TestCase):
@@ -143,9 +138,7 @@ class TestCalcInvalidCountSize(unittest.TestCase):
         with self.assertRaises(ValueError) as context:
             calc(fig, func, size)
 
-        self.assertEqual(
-            str(context.exception), expected_result
-        )
+        self.assertEqual(str(context.exception), expected_result)
 
     def test_calc_invalid_count_size_null(self):
         fig = "square"
@@ -156,6 +149,4 @@ class TestCalcInvalidCountSize(unittest.TestCase):
         with self.assertRaises(ValueError) as context:
             calc(fig, func, size)
 
-        self.assertEqual(
-            str(context.exception), expected_result
-        )
+        self.assertEqual(str(context.exception), expected_result)

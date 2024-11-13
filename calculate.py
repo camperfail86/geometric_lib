@@ -10,8 +10,8 @@ sizes = {
     "area-circle": 1,
     "perimeter-square": 1,
     "area-square": 1,
-    "perimeter-triangle": 3,  
-    "area-triangle": 3   
+    "perimeter-triangle": 3,
+    "area-triangle": 3,
 }
 
 
@@ -24,7 +24,9 @@ def calc(fig, func, size):
 
     expected_size = sizes.get(f"{func}-{fig}")
     if len(size) != expected_size:
-        raise ValueError(f"Ожидается {expected_size} параметров для {fig} и функции {func}")
+        raise ValueError(
+            f"Ожидается {expected_size} параметров для {fig} и функции {func}"
+        )
 
     result = eval(f"{fig}.{func}(*{size})")
     return result

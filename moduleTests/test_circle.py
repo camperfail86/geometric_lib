@@ -10,7 +10,7 @@ class TestCircleArea(unittest.TestCase):
     def test_area(self):
         # Arrange
         radius = 3
-        expected_area = pi * 3 ** 2
+        expected_area = pi * 3**2
 
         # Act
         result = area(radius)
@@ -29,4 +29,3 @@ class TestCirclePerimeter(unittest.TestCase):
         assert (
             result == expected_perimeter
         ), f"Expected {expected_perimeter}, but got {result}"
-
