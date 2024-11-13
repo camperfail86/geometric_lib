@@ -33,14 +33,15 @@ jobs:
           python-version: '3.13'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install black flake8
 
       - name: Run tests
-        run: unittest
+        run: python -m unittest discover
 
       - name: Check code style
-        run: |
-          flake8
+        run: flake8
 
       - name: Format code (optional)
         run: black
