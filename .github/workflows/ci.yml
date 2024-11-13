@@ -40,8 +40,8 @@ jobs:
 
       - name: Check code style
         run: |
-          flake8 .
+          flake8
 
       - name: Format code (optional)
-        run: black .  
+        run: black
         if: ${{ failure() }} 
