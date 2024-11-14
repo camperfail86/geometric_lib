@@ -4,10 +4,13 @@ run-name: test code geometric_lib
 on:
   push:
     branches:
-      - feat/tests
+      - master
+      - release
   pull_request:
     branches:
-      - feat/tests
+      - master
+      - release
+      - develop
 
 jobs:
   build:
