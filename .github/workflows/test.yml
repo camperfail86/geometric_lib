@@ -17,6 +17,11 @@ jobs:
       GROUP_NUMBER: "M3111"
 
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          ref: feat/tests 
+          
       - name: Print Info
         run: |
           echo "ФИО: ${{ env.STUDENT_NAME }}"
