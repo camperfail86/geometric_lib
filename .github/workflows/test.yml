@@ -40,7 +40,7 @@ jobs:
         run: python3 -m unittest discover moduleTests
 
       - name: Check code style
-        run: flake8
+        run: black --check .
 
       - name: Format code (optional)
         run: black .
